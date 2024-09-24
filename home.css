@@ -159,6 +159,7 @@ section {
 .products .box-container .box .price span {
   text-decoration: none;
 }
+
 .products .box-container img {
   position: absolute;
   top: 50%;
@@ -176,10 +177,7 @@ section {
 .products #dark-box {
   color: #fff;
 }
-.products .box-container .box .box-head,
-.box-bottom {
-  z-index: 10;
-}
+
 .products #dark-image img {
   top: 0;
   left: 0;
@@ -195,18 +193,19 @@ section {
   border: 0.2rem solid var(--main-color);
   width: 6.5rem;
   height: 6.5rem;
-  
 }
+
 .products .box-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10rem;
-   
-  
+    z-index: 10;
+    width: 100%;
 }
-
-.products .box-bottom .product-btn a i {
+.products .box-head{
+  z-index: 10;
+}
+    .products .box-bottom .product-btn a i {
   font-size: 1.6rem;
   color: var(--main-color);
 }
