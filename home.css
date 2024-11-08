@@ -448,7 +448,7 @@ section {
        background-color: #fff;
        transform: scaleY(0);
     }
-    .header .search-form .active{
+    .header .search-form.active{
         transform: scaleY(1);
     }
     .header .search-form i{
@@ -482,7 +482,7 @@ section {
         transition: var(--transition);
         
     }
-    .cart-items-container .active{
+    .cart-items-container.active{
         right: 3rem;
     }
     .cart-items-container .cart-item img{
@@ -536,7 +536,7 @@ section {
         margin: 1.5rem;
         padding: 0.5rem;
         font-size: 2rem;}
-        .navbar .active{right:3rem;}
+        .navbar.active{right:3rem;}
        
 
     }
@@ -547,6 +547,14 @@ section {
                 height: 60rem;
             
         }
+    }
+    @media (max-width:567px){
+      html{
+        font-size: 50%;
+      }
+      .header #menu-btn{
+        display: inline-block;
+      }
     }
 
 
